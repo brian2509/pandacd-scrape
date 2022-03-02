@@ -1,0 +1,27 @@
+{
+  "name": "pandacd-scrape",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "run": "ts-node ./src/main.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brian2509/pandacd-scrape.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brian2509/pandacd-scrape/issues"
+  },
+  "homepage": "https://github.com/brian2509/pandacd-scrape#readme",
+  "dependencies": {
+    "csv-parser": "^3.0.0",
+    "parse-torrent": "^9.1.4",
+    "ts-node": "^10.6.0"
+  },
+  "devDependencies": {
+    "typescript": "^4.6.2"
+  }
+}
