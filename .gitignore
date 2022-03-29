@@ -132,3 +132,5 @@ dist
 *.csv
 /assets/*
 .idea/*
+assets/cache/*
+assets_backup/*

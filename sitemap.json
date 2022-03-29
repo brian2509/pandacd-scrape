@@ -1,0 +1,50 @@
+{
+  "_id": "panda_cd",
+  "startUrl": [
+    "https://pandacd.io/index.php?order_by=seeders&page=[0-20]"
+  ],
+  "selectors": [
+    {
+      "id": "album_link",
+      "parentSelectors": [
+        "_root"
+      ],
+      "type": "SelectorLink",
+      "selector": ".card > a",
+      "multiple": true,
+      "delay": 0
+    },
+    {
+      "id": "download_link",
+      "parentSelectors": [
+        "album_link"
+      ],
+      "type": "SelectorLink",
+      "selector": "tbody:nth-of-type(2) a.btn",
+      "multiple": false,
+      "delay": 0
+    },
+    {
+      "id": "artist",
+      "parentSelectors": [
+        "album_link"
+      ],
+      "type": "SelectorText",
+      "selector": "h4 a",
+      "multiple": false,
+      "delay": 0,
+      "regex": ""
+    },
+    {
+      "id": "title",
+      "parentSelectors": [
+        "album_link"
+      ],
+      "type": "SelectorText",
+      "selector": "h4",
+      "multiple": false,
+      "delay": 0,
+      "regex": ""
+    }
+  ]
+}
